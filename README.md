@@ -19,6 +19,18 @@
 - `Microprocessor_jalr_single_inst_tb.v`: JALR checks.
 - `Microprocessor_rv32i_all37_tb.v`: broader RV32I instruction coverage run.
 
+## Hazard Testbenches In `tb/`
+
+- `Microprocessor_hazard_raw_adj_tb.v`: RAW dependency with adjacent instructions.
+- `Microprocessor_hazard_raw_gap1_tb.v`: RAW dependency with one instruction gap.
+- `Microprocessor_hazard_lw_add_tb.v`: load-use style dependency (load followed by ALU consumer).
+- `Microprocessor_hazard_store_data_tb.v`: producer-to-store data hazard.
+- `Microprocessor_hazard_add_beq_tb.v`: ALU result feeding branch decision path.
+- `Microprocessor_hazard_war_like_tb.v`: ordering checks in WAR-like patterns.
+- `Microprocessor_hazard_free_tb.v`: no-hazard reference behavior.
+- `Microprocessor_hazard_stress_tb.v`: mixed hazard stress sequence.
+- `Microprocessor_hazards_all_tb.v`: combined hazard regression run.
+
 ## Hazard Handling
 
 The current testbench suite covers common pipeline hazard/control scenarios:
