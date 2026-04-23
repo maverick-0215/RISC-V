@@ -1,3 +1,7 @@
+### This repository contains RISC V implemented in Verilog, testbenches used to verify correctness, simulation results, and reports
+
+### For RTL to GDS, please refer to this [repository](https://github.com/maverick-0215/RTL_to_GDS)
+
 ## Vivado Setup
 
 1. Add all files in `design/` to Design Sources.
